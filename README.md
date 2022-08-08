@@ -1,4 +1,4 @@
-# Rocketseat ESLint config
+# Helpmydesk ESLint config
 
 ## Whats included?
 
@@ -12,13 +12,13 @@
 
 1. Install the dependencies
 ```
-npm i -D eslint @helpmydesk/eslint-config-helpmydesk
+npm i -D eslint eslint-config-helpmydesk
 ```
 
 2. Create a `.eslintrc.json` file extending the config:
 ```
 {
-  "extends": "@helpmydesk/eslint-config-helpmydesk/react"
+  "extends": "eslint-config-helpmydesk/react"
 }
 ```
 
