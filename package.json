@@ -1,12 +1,12 @@
 {
-  "name": "@eslint/eslint-config",
+  "name": "eslint-config-helpmydesk",
   "version": "1.1.3",
   "private": false,
   "description": "ESLint configuration.",
   "main": "index.js",
   "license": "MIT",
   "repository": {
-    "url": "gugavillar/eslint-config"
+    "url": "git+https://github.com/helpmydesk/eslint-config.git"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.25.0",
@@ -31,5 +31,13 @@
     "typescript": {
       "optional": true
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/helpmydesk/eslint-config/issues"
+  },
+  "homepage": "https://github.com/helpmydesk/eslint-config#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
 }
