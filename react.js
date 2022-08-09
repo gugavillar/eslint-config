@@ -24,7 +24,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-    'prettier/prettier': ["error", {
+    'prettier/prettier': ['error', {
       'printWidth': 80,
       'tabWidth': 2,
       'singleQuote': true,
@@ -32,6 +32,25 @@ module.exports = {
       'arrowParens': 'always',
       'semi': false,
     }],
+    'import/order': [
+      'error',
+      {
+        'groups': ['builtin', 'external', 'internal'],
+        'pathGroups': [
+          {
+            'pattern': 'react',
+            'group': 'external',
+            'position': 'before'
+          }
+        ],
+        'pathGroupsExcludedImportTypes': ['react'],
+        'newlines-between': 'always',
+        'alphabetize': {
+          'order': 'asc',
+          'caseInsensitive': true
+        }
+      }
+    ],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'jsx-a11y/alt-text': [
@@ -53,25 +72,6 @@ module.exports = {
     },
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
-    },
-    "import/order": [
-      "error",
-      {
-        "groups": ["builtin", "external", "internal"],
-        "pathGroups": [
-          {
-            "pattern": "react",
-            "group": "external",
-            "position": "before"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": ["react"],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
-      }
-    ],
+    }
   }
 }
