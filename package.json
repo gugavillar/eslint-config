@@ -1,12 +1,12 @@
 {
   "name": "eslint-config-helpmydesk",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "private": false,
   "description": "ESLint configuration.",
   "main": "index.js",
   "license": "MIT",
   "repository": {
-    "url": "git+https://github.com/helpmydesk/eslint-config.git"
+    "url": "git+https://github.com/gugavillar/eslint-config.git"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.25.0",
