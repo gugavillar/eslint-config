@@ -31,6 +31,7 @@ module.exports = {
       'trailingComma': 'none',
       'arrowParens': 'always',
       'semi': false,
+      'singleAttributePerLine': true
     }],
     'import/order': [
       'error',
