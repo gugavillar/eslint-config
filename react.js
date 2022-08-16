@@ -36,15 +36,32 @@ module.exports = {
     'import/order': [
       'error',
       {
-        'groups': ['builtin', 'external', 'internal'],
+        'groups': [
+          'external',
+          'builtin',
+          'internal',
+          [
+            'parent',
+            'sibling'
+          ],
+          'index'
+        ],
         'pathGroups': [
+          {
+            'pattern': 'react-dom',
+            'group': 'external',
+            'position': 'before'
+          },
           {
             'pattern': 'react',
             'group': 'external',
             'position': 'before'
           }
         ],
-        'pathGroupsExcludedImportTypes': ['react'],
+        'pathGroupsExcludedImportTypes': [
+          'react',
+          'react-dom'
+        ],
         'newlines-between': 'always',
         'alphabetize': {
           'order': 'asc',
