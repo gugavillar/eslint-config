@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-helpmydesk",
-  "version": "1.1.19",
+  "version": "1.1.20",
   "private": false,
   "description": "ESLint configuration.",
   "main": "index.js",
