@@ -23,6 +23,7 @@ module.exports = {
     'jsx-a11y',
     '@typescript-eslint'
   ],
+  ignorePatterns: ["package.json", "package-lock.json", "yarn.lock", "index.html", "**/**/*.html"],
   rules: {
     'prettier/prettier': ['error', {
       'printWidth': 80,
