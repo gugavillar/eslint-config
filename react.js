@@ -26,7 +26,7 @@ module.exports = {
   ignorePatterns: ["package.json", "package-lock.json", "yarn.lock", "index.html", "**/**/*.html"],
   rules: {
     'prettier/prettier': ['error', {
-      'printWidth': 80,
+      'printWidth': 120,
       'tabWidth': 2,
       'singleQuote': true,
       'trailingComma': 'none',
@@ -46,7 +46,7 @@ module.exports = {
             'parent',
             'sibling'
           ],
-          'index'
+          ['index', 'object', 'type']
         ],
         'pathGroups': [
           {
