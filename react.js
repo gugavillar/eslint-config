@@ -35,6 +35,10 @@ module.exports = {
       'singleAttributePerLine': true,
       'endOfLine': 'auto'
     }],
+    'camelcase': ["error", {
+      'ignoreImports': true,
+      'ignoreDestructuring': true
+    }],
     'import/order': [
       'error',
       {
