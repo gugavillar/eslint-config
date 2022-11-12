@@ -36,6 +36,8 @@ module.exports = {
       'endOfLine': 'auto'
     }],
     'camelcase': 'off',
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     'import/order': [
       'error',
       {
