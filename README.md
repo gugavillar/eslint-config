@@ -7,8 +7,9 @@
 - React Hooks plugin;
 - JSX a11y plugin;
 - Prettier;
+- Import order plugin;
 
-## Setup
+## Setup React
 
 1. Install the dependencies
 ```
@@ -19,6 +20,20 @@ npm i -D eslint eslint-config-helpmydesk
 ```
 {
   "extends": "eslint-config-helpmydesk/react"
+}
+```
+
+## Setup Next
+
+1. Install the dependencies
+```
+npm i -D eslint eslint-config-helpmydesk
+```
+
+2. Create a `.eslintrc.json` file extending the config:
+```
+{
+  "extends": ["next", "eslint-config-helpmydesk/react"]
 }
 ```
 
