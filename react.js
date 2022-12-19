@@ -6,9 +6,9 @@ module.exports = {
   },
   extends: [
     "next",
+    "standard",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "standard",
     "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
@@ -19,15 +19,10 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "jsx-a11y", "@typescript-eslint"],
+  plugins: ["react", "jsx-a11y", "prettier", "@typescript-eslint"],
   ignorePatterns: [
     "package.json",
-    "package-lock.json",
     "yarn.lock",
-    "index.html",
-    "**/**/*.html",
-    "README.md",
-    ".eslintrc.js",
   ],
   rules: {
     "@typescript-eslint/no-unused-vars": [
@@ -62,18 +57,6 @@ module.exports = {
           "internal",
           ["parent", "sibling"],
           ["index", "object", "type"],
-        ],
-        'pathGroups': [
-          {
-            'pattern': 'react-dom',
-            'group': 'external',
-            'position': 'before'
-          },
-          {
-            'pattern': 'react',
-            'group': 'external',
-            'position': 'before'
-          }
         ],
         pathGroupsExcludedImportTypes: [],
         "newlines-between": "always",
